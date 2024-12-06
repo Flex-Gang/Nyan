@@ -1,0 +1,46 @@
+#map {
+	width : 850px ;
+    height: 400px;
+    border : none ;
+}
+
+html{
+	width = 1200;
+	background-color: #f5a442
+}
+
+#acheter{
+	width = 1200;
+}
+
+#frr{
+	top: 0;
+	position: absolute;
+}
+
+.big{
+	width:700px;
+	height:235px;
+	background-color:#cecece;
+	border-radius: 15px;
+	border : solid;
+	border-color: darkgrey;
+	box-shadow : 3px 3px 5px black;
+	
+}
+
+textarea{
+	resize: none;
+}
+
+#titre{
+	color: #323ca8;
+
+}
+
+#flickerDiv {
+	transition-duration:1s;
+    transform: rotate(360deg);
+    position: absolute;
+    animation: move 4s infinite linear;
+}

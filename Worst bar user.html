@@ -1,0 +1,245 @@
+<!doctype html>
+<html onclick = "document.getElementById('background-music').play()" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Unsupportable bar</title>
+    <link href="nuit.css" rel="stylesheet"/>
+<center>
+
+
+<h1 id = "titre"><u> Veuillez nous laisser un commentaire </u></h1>
+
+</center>
+
+<audio id="background-music" autoplay loop>
+      <source src="Sounds/nyan-cat_1.mp3" type="audio/mp3">
+</audio>
+
+<div id="flickerDiv" class = "big" onclick="get()">
+
+  <div id = "frr">
+<br>
+
+    <label for="uname">Quel est votre nom d'utilisateur : </label>
+    <input type="password" name="Nom et prénom" id = "myInput"> <br>
+    <label for="uname">Que pensez vous de notre site : </label> <br>
+
+
+    <textarea id = "text" cols="80" rows="7"></textarea><br>
+    <button onclick="Open(false)">Soumettre</button>
+    <div id ="show"></div>  
+<input id = "showing" type="checkbox" onclick="myFunction()">Show Password
+
+
+
+
+
+<style type="text/css">
+    /*  */
+
+
+/* Div to be animated */
+#flickerDiv {
+
+    position: absolute;
+    animation: flicker 1s infinite, move 2s infinite linear;
+}
+
+#flickerDiv {
+
+    animation: rotate 1s infinite, move 2s infinite linear, flicker 1s infinite;
+}
+
+
+/* Flickering effect */
+@keyframes flicker {
+    0% { opacity: 1; }
+    25% { opacity: 0.2; }
+    50% { opacity: 0.8; }
+    75% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* Movement animation */
+@keyframes move {
+    0% { left: 10%; top: 10%; }
+    25% { left: 50%; top: 10%; }
+    50% { left: 90%; top: 50%; }
+    75% { left: 50%; top: 90%; }
+    100% { left: 10%; top: 50%; }
+}
+
+</style>
+
+<script type="text/javascript">
+    const flickerDiv = document.getElementById('flickerDiv');
+
+function Mouvement() {
+    const randomX = Math.floor(Math.random() * (window.innerWidth - 100)); // Subtracting width of the div
+    const randomY = Math.floor(Math.random() * (window.innerHeight - 100)); // Subtracting height of the div
+
+    // Apply the random positions to the div
+    flickerDiv.style.left = `${randomX}px`;
+    flickerDiv.style.top = `${randomY}px`;
+}
+
+
+setInterval(Mouvement, 1500);
+
+
+Mouvement();
+
+document.getElementById('background-music').play();
+
+</script>
+
+</body>
+</html>
+
+
+
+
+<style type="text/css">
+    /* Full-screen layout */
+
+/* Div to be animated */
+
+
+
+
+/* Flickering effect */
+@keyframes flicker {
+    0% { opacity: 1; }
+    25% { opacity: 0.2; }
+    50% { opacity: 0.8; }
+    75% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* Movement animation */
+@keyframes move {
+    0% { left: 10%; top: 10%; }
+    25% { left: 50%; top: 10%; }
+    50% { left: 40%; top: 50%; }
+    75% { left: 50%; top: 60%; }
+    100% { left: 10%; top: 50%; }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+
+</style>
+
+
+
+
+<script type="text/javascript">
+    const flickerDiv = document.getElementById('flickerDiv');
+
+
+function Mouvement() {
+    const randomX = Math.floor(Math.random() * (window.innerWidth - 100)); // Subtracting width of the div
+    const randomY = Math.floor(Math.random() * (window.innerHeight - 100)); // Subtracting height of the div
+
+    // Apply the random positions to the div
+    flickerDiv.style.left = `${randomX}px`;
+    flickerDiv.style.top = `${randomY}px`;
+}
+
+setInterval(Mouvement, 1500);
+
+Mouvement();
+
+</script>
+
+
+
+
+
+
+<script>
+
+
+    
+<script type="text/javascript">
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+  function Open(bool) {
+    var x = document.getElementById("showing");
+    var password = document.getElementById("myInput");
+    var message = document.getElementById("text");
+      if (!x.checked || password.value.trim() == "" || message.value.trim() == ""){
+        // Open a new page
+        alert("Affichez bien votre nom d'utilisateur avant d'envoyer et verifiez que les champs ne sont pas vides !"); // Change URL as needed
+        location.reload();
+      }
+      
+      else {
+        // Show a pop-up message (alert)
+        alert("Merci pour votre commentaire : Nous sommes satifait de la qualité du travail apporté. Merci pour tout ! \n signé " + password.value.trim());
+        location.reload();
+      }
+    }
+
+function get(){
+  getElementById("show").visiblity = hidden;
+}
+</script>
+
+</div>
+
+
+
+  </head>
+
+
+</div>
+
+
+
+
+
+  <body>
+
+
+<section><img id=map src="Images_barre/nyan-cat.GIF"/></section>
+
+
+<style id = "acheter">
+
+section {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  animation:  mymove 1.5s infinite linear;
+}
+
+
+
+@keyframes mymove {
+  from {left: -300px;}
+  to {left:65%;}  
+
+}
+
+
+</style>
+  </body>
+</html>
+
+
